@@ -143,7 +143,7 @@ Form select
 
 Example form date and form select
 
-<img src="doc_images/tables/form_date_select.png.png" alt="Forms date and select" data-canonical-src="doc_images/tables/form_date_select.png.png" />
+<img src="doc_images/tables/form_date_select.png" alt="Forms date and select" data-canonical-src="doc_images/tables/form_date_select.png" />
 
 ```
   <div class="table-btn-top">
