@@ -37,7 +37,6 @@
 <button type="button" class="btn admin-btn-primary btn-sm">primary</button>
 <button type="button" class="btn admin-btn-primary-o btn-md">primary outline</button>
 <button type="button" class="btn admin-btn-secondary btn-lg">secondary</button>
-
 ```
 
   Full width add `.d-block` or `.w-100` 
@@ -47,14 +46,12 @@
 ```
 <button type="button" class="btn admin-btn-danger d-block">danger</button>
 <button type="button" class="btn admin-btn-danger w-100">danger</button>
-
 ```
 
 ## Links
 
-  <span style="color: #63d9e5; font-weeight: bold;">link link</span>
+ <img src="doc_images/links/link.png" alt="full width" data-canonical-src="doc_images/links/link.png" />
 
 ```
 <a href="#" class="admin-link">link link</a>
-
 ```
