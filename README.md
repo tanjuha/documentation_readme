@@ -64,7 +64,7 @@
 
   #### Exampls
 
- <img src="doc_images/tables_btn_top_bottom.png" alt="Tables buttons top bottom" data-canonical-src="doc_images/tables_btn_top_bottom.png" />
+ <img src="doc_images/tables/tables_btn_top_bottom.png" alt="Tables buttons top bottom" data-canonical-src="doc_images/tables/tables_btn_top_bottom.png" />
 
 ```
 // top left, right
