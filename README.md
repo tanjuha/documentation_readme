@@ -12,7 +12,7 @@
 - [Links](#links)
 - [Tables](#tables)
   - [Table buttons top bottom](#table_buttons_top_bottom)
-  - [Table button search](#table_button_search)
+  - [Table forms](#table_forms)
 
 ## Button
 
@@ -89,17 +89,78 @@ Full width add `.d-block` or `.w-100`
     </div>
 ```
 
-### Table button search
+### Table forms
+
+Form search
 
 <img src="doc_images/tables/table_btn_search.png" alt="Tables button search" data-canonical-src="doc_images/tables/table_btn_search.png" />
 
 ```
   <div class="table-btn-top">
       <div class="table-btn left">
-          <form class="form-inline table-search">
+          <form class="form-inline form-search">
               <input class="form-control" type="search" placeholder="Search" aria-label="Search">
               <i class="fa fa-search"></i>
           </form>
       </div>
+  </div>
+```
+
+Form date
+
+<img src="doc_images/tables/form_date.png" alt="Form date" data-canonical-src="doc_images/tables/form_date.png" />
+
+```
+  <div class="table-btn-top">
+    <div class="table-btn right d-flex">
+        <form class="form-inline form-date">
+            <label>Дата: </label>
+            <input class="form-control ml-1" type="date">
+        </form>
+    </div>
+  </div>
+```
+
+Form select
+
+<img src="doc_images/tables/form_select.png" alt="Form select" data-canonical-src="doc_images/tables/form_select.png" />
+
+```
+  <div class="table-btn-top">
+    <div class="table-btn right d-flex">
+        <form class="form-inline form-select">
+            <label>Должность: </label>
+            <select class="select">
+                <option selected>Должность</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </form>
+    </div>
+  </div>
+```
+
+Example form date and form select
+
+<img src="doc_images/tables/form_date_select.png.png" alt="Forms date and select" data-canonical-src="doc_images/tables/form_date_select.png.png" />
+
+```
+  <div class="table-btn-top">
+    <div class="table-btn right d-flex">
+        <form class="form-inline form-date">
+            <label>Дата: </label>
+            <input class="form-control ml-1" type="date">
+        </form>
+        <form class="form-inline form-select ml-3">
+            <label>Должность: </label>
+            <select class="select">
+                <option selected>Должность</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </form>
+    </div>
   </div>
 ```
