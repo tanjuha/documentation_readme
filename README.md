@@ -11,8 +11,8 @@
   - [Sizes](#sizes)
 - [Links](#links)
 - [Tables](#tables)
-  - [Table buttons top bottom](#table_buttons_top_bottom)
-  - [Table forms](#table_forms)
+  - [Table buttons top bottom](#table-buttons-top-bottom)
+  - [Table forms](#table-forms)
 
 ## Button
 
