@@ -9,6 +9,8 @@
   - [Examples](#examples)
   - [Sizes](#sizes)
 - [Links](#links) 
+- [Tables](#tables) 
+  - [Tables buttons top bottom](#tables_buttons_top_bottom)
 
 
 ## Button
@@ -17,7 +19,7 @@
 
 <img src="doc_images/buttons/examples.jpg" alt="examples" data-canonical-src="doc_images/buttons/examples.jpg" />
 
-```css
+```
 <button type="button" class="btn admin-btn-primary">primary</button>
 <button type="button" class="btn admin-btn-primary-o">primary outline</button>
 <button type="button" class="btn admin-btn-secondary">secondary</button>
@@ -54,4 +56,34 @@
 
 ```
 <a href="#" class="admin-link">link link</a>
+```
+
+## Tables
+
+### Tables buttons top bottom
+
+  #### Exampls
+
+ <img src="doc_images/tables_btn_top_bottom.png" alt="Tables buttons top bottom" data-canonical-src="doc_images/tables_btn_top_bottom.png" />
+
+```
+// top left, right
+    <div class="table-btn-top">
+      <div class="table-btn left">
+        top left
+      </div>
+      <div class="table-btn right">
+        top right
+      </div>
+    </div>
+
+// bottom left right
+    <div class="table-btn-bottom">
+      <div class="table-btn left">
+        bottom left
+      </div>
+      <div class="table-btn right">
+        bottom right
+      </div>
+    </div>
 ```
