@@ -5,13 +5,14 @@
 </div>
 
 ## Contents
+
 - [Buttons](#button)
   - [Examples](#examples)
   - [Sizes](#sizes)
-- [Links](#links) 
-- [Tables](#tables) 
-  - [Tables buttons top bottom](#tables_buttons_top_bottom)
-
+- [Links](#links)
+- [Tables](#tables)
+  - [Table buttons top bottom](#table_buttons_top_bottom)
+  - [Table button search](#table_button_search)
 
 ## Button
 
@@ -31,7 +32,7 @@
 
 ### Sizes
 
-  Add  `.btn-sm` or `.btn-md` or `.btn-lg` 
+Add `.btn-sm` or `.btn-md` or `.btn-lg`
 
   <img src="doc_images/buttons/size_sm_md_lg.jpg" alt="sizes sm md lg" data-canonical-src="doc_images/buttons/size_sm_md_lg.jpg" />
 
@@ -41,7 +42,7 @@
 <button type="button" class="btn admin-btn-secondary btn-lg">secondary</button>
 ```
 
-  Full width add `.d-block` or `.w-100` 
+Full width add `.d-block` or `.w-100`
 
    <img src="doc_images/buttons/full_width.png" alt="full width" data-canonical-src="doc_images/buttons/full_width.png" />
 
@@ -60,11 +61,11 @@
 
 ## Tables
 
-### Tables buttons top bottom
+### Table buttons top bottom
 
-  #### Exampls
+#### Exampls
 
- <img src="doc_images/tables/tables_btn_top_bottom.png" alt="Tables buttons top bottom" data-canonical-src="doc_images/tables/tables_btn_top_bottom.png" />
+ <img src="doc_images/tables/table_btn_top_bottom.png" alt="Tables buttons top bottom" data-canonical-src="doc_images/tables/table_btn_top_bottom.png" />
 
 ```
 // top left, right
@@ -86,4 +87,19 @@
         bottom right
       </div>
     </div>
+```
+
+### Table button search
+
+<img src="doc_images/tables/table_btn_search.png" alt="Tables button search" data-canonical-src="doc_images/tables/table_btn_search.png" />
+
+```
+  <div class="table-btn-top">
+      <div class="table-btn left">
+          <form class="form-inline table-search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <i class="fa fa-search"></i>
+          </form>
+      </div>
+  </div>
 ```
