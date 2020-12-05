@@ -25,6 +25,7 @@
 <button type="button" class="btn admin-btn-primary-o">primary outline</button>
 <button type="button" class="btn admin-btn-secondary">secondary</button>
 <button type="button" class="btn admin-btn-danger">secondary</button>
+<button type="button" class="btn admin-btn-link">link</button>
 <button type="button" class="btn disabled" disabled >disabled</button>
 <button type="button" class="btn disabled-o" disabled >disabled outline</button>
 
@@ -52,6 +53,8 @@ Full width add `.d-block` or `.w-100`
 ```
 
 ## Links
+
+Add `.admin-link`
 
  <img src="doc_images/links/link.png" alt="full width" data-canonical-src="doc_images/links/link.png" />
 
