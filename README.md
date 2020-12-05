@@ -8,7 +8,7 @@
 - [Buttons](#button)
   - [Examples](#examples)
   - [Sizes](#sizes)
-  
+- [Links](#links) 
 
 
 ## Button
@@ -33,7 +33,7 @@
 
   <img src="doc_images/buttons/size_sm_md_lg.jpg" alt="sizes sm md lg" data-canonical-src="doc_images/buttons/size_sm_md_lg.jpg" />
 
-```css
+```
 <button type="button" class="btn admin-btn-primary btn-sm">primary</button>
 <button type="button" class="btn admin-btn-primary-o btn-md">primary outline</button>
 <button type="button" class="btn admin-btn-secondary btn-lg">secondary</button>
@@ -44,8 +44,17 @@
 
    <img src="doc_images/buttons/full_width.png" alt="full width" data-canonical-src="doc_images/buttons/full_width.png" />
 
-```css
+```
 <button type="button" class="btn admin-btn-danger d-block">danger</button>
 <button type="button" class="btn admin-btn-danger w-100">danger</button>
+
+```
+
+## Links
+
+  <span style="color: #63d9e5; font-weeight: bold;">link link</span>
+
+```
+<a href="#" class="admin-link">link link</a>
 
 ```
