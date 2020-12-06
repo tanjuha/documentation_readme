@@ -10,9 +10,14 @@
   - [Examples](#examples)
   - [Sizes](#sizes)
 - [Links](#links)
+- [Forms](#forms)
+  - [Select](#select)
+    - [Simple select](#simple-select)
+  - [Search](#search)
+  - [Date](#date)
+  - [Example forms date and select](#example-forms-date-and-select)
 - [Tables](#tables)
   - [Table buttons top bottom](#table-buttons-top-bottom)
-  - [Table forms](#table-forms)
 
 ## Button
 
@@ -61,7 +66,132 @@ Add `.admin-link`
 ```
 <a href="#" class="admin-link">link link</a>
 ```
+## Forms
 
+### Select
+
+ <img src="doc_images/forms/select.jpg" alt="Form select" data-canonical-src="doc_images/forms/select.jpg" />
+
+```
+// html
+  <div class="select_wrap">
+    <ul class="default_option">
+      <li>
+        <div class="option accepted_queue">
+          <p>Accepted to the queue</p>
+        </div>
+      </li>
+    </ul>
+    <ul class="select_ul">
+      <li>
+        <div class="option accepted_queue">
+          <p>Accepted to the queue</p>
+        </div>
+      </li>
+      <li>
+        <div class="option removed_queue">
+          <p>Removed from the queue</p>
+        </div>
+      </li>
+      <li>
+        <div class="option not_attendance">
+          <p>Not attendance</p>
+        </div>
+      </li>
+      <li>
+        <div class="option waiting">
+          <p>Patient waiting</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+```
+
+```
+//jQuery
+  $(document).ready(function() {
+    $(".default_option").click(function() {
+      $(this).parent().toggleClass("active");
+    })
+    $(".select_ul li").click(function() {
+      var currentele = $(this).html();
+      $(".default_option li").html(currentele);
+      $(this).parents(".select_wrap").removeClass("active");
+    })
+  });
+```
+#### Simple select
+
+<img src="doc_images/tables/form_select.png" alt="Form select" data-canonical-src="doc_images/tables/form_select.png" />
+
+```
+  <div class="table-btn-top">
+    <div class="table-btn right d-flex">
+        <form class="form-inline form-select">
+            <label>Должность: </label>
+            <select class="select">
+                <option selected>Должность</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </form>
+    </div>
+  </div>
+```
+### Search 
+
+<img src="doc_images/tables/table_btn_search.png" alt="Tables button search" data-canonical-src="doc_images/tables/table_btn_search.png" />
+
+```
+  <div class="table-btn-top">
+      <div class="table-btn left">
+          <form class="form-inline form-search">
+              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+              <i class="fa fa-search"></i>
+          </form>
+      </div>
+  </div>
+```
+
+### Date
+
+<img src="doc_images/tables/form_date.png" alt="Form date" data-canonical-src="doc_images/tables/form_date.png" />
+
+```
+  <div class="table-btn-top"> 
+    <div class="table-btn right d-flex">
+        <form class="form-inline form-date">
+            <label>Дата: </label>
+            <input class="form-control ml-1" type="date">
+        </form>
+    </div>
+  </div>
+```
+
+### Example forms date and select
+
+<img src="doc_images/tables/form_date_select.png" alt="Forms date and select" data-canonical-src="doc_images/tables/form_date_select.png" />
+
+```
+  <div class="table-btn-top">
+    <div class="table-btn right d-flex">
+        <form class="form-inline form-date">
+            <label>Дата: </label>
+            <input class="form-control ml-1" type="date">
+        </form>
+        <form class="form-inline form-select ml-3">
+            <label>Должность: </label>
+            <select class="select">
+                <option selected>Должность</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </form>
+    </div>
+  </div>
+```
 ## Tables
 
 ### Table buttons top bottom
@@ -90,80 +220,4 @@ Add `.admin-link`
         bottom right
       </div>
     </div>
-```
-
-### Table forms
-
-Form search
-
-<img src="doc_images/tables/table_btn_search.png" alt="Tables button search" data-canonical-src="doc_images/tables/table_btn_search.png" />
-
-```
-  <div class="table-btn-top">
-      <div class="table-btn left">
-          <form class="form-inline form-search">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-              <i class="fa fa-search"></i>
-          </form>
-      </div>
-  </div>
-```
-
-Form date
-
-<img src="doc_images/tables/form_date.png" alt="Form date" data-canonical-src="doc_images/tables/form_date.png" />
-
-```
-  <div class="table-btn-top">
-    <div class="table-btn right d-flex">
-        <form class="form-inline form-date">
-            <label>Дата: </label>
-            <input class="form-control ml-1" type="date">
-        </form>
-    </div>
-  </div>
-```
-
-Form select
-
-<img src="doc_images/tables/form_select.png" alt="Form select" data-canonical-src="doc_images/tables/form_select.png" />
-
-```
-  <div class="table-btn-top">
-    <div class="table-btn right d-flex">
-        <form class="form-inline form-select">
-            <label>Должность: </label>
-            <select class="select">
-                <option selected>Должность</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-        </form>
-    </div>
-  </div>
-```
-
-Example form date and form select
-
-<img src="doc_images/tables/form_date_select.png" alt="Forms date and select" data-canonical-src="doc_images/tables/form_date_select.png" />
-
-```
-  <div class="table-btn-top">
-    <div class="table-btn right d-flex">
-        <form class="form-inline form-date">
-            <label>Дата: </label>
-            <input class="form-control ml-1" type="date">
-        </form>
-        <form class="form-inline form-select ml-3">
-            <label>Должность: </label>
-            <select class="select">
-                <option selected>Должность</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
-            </select>
-        </form>
-    </div>
-  </div>
 ```
