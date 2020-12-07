@@ -17,6 +17,7 @@
   - [Date](#date)
   - [Example forms date and select](#example-forms-date-and-select)
 - [Tables](#tables)
+  - [Example custom table](#example-custom-table)
   - [Table buttons top bottom](#table-buttons-top-bottom)
 
 ## Button
@@ -194,6 +195,85 @@ Add `.admin-link`
 ```
 ## Tables
 
+### Example custom table
+
+<img src="doc_images/tables/custom_table.jpg" alt="Custom table" data-canonical-src="doc_images/tables/custom_table.jpg" />
+
+```
+<table class="table admin-table my-5">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>ID</th>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Status</th>
+      <th>crud</th>
+      <th>select</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>1</td>
+    <td class="font-weight-bold text-dark">
+      43
+    </td>
+    <td>Tom Tomius</td>
+    <td>
+      <a href="#" class="btn admin-btn-primary-o btn-sm">Описание</a>
+    </td>
+    <td>
+      <i class="fa fa-circle fa-xs text-success" aria-hidden="true"></i>
+      <i class="fa fa-circle fa-xs text-danger" aria-hidden="true"></i>
+      <i class="fa fa-circle fa-xs text-warning" aria-hidden="true"></i>
+      <i class="fa fa-circle fa-xs text-muted" aria-hidden="true"></i>
+    </td>
+    <td>
+      <a href="#" class="admin-crud view" title="View" aria-label="View">
+        <i class="fa fa-eye" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="admin-crud update px-2" title="Update" aria-label="Update">
+        <i class="fa fa-pencil-alt" aria-hidden="true"></i>
+      </a>
+      <a href="#" class="admin-crud delete" title="Delete" aria-label="Deletedata-confirm="Are you sure you want to delete this item?" data-method="post">
+        <i class="fa fa-trash-alt" aria-hidden="true"></i>
+      </a>
+    </td>
+    <td>
+      <div class="select_wrap select-btn-status">
+        <ul class="default_option">
+          <li>
+            <div class="option accepted_queue">
+              <p>Accepted to the queue</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="select_ul">
+          <li>
+            <div class="option accepted_queue">
+              <p>Accepted to the queue</p>
+            </div>
+          </li>
+          <li>
+            <div class="option removed_queue">
+              <p>Removed from the queue</p>
+            </div>
+          </li>
+          <li>
+            <div class="option not_attendance">
+              <p>Not attendance</p>
+            </div>
+          </li>
+          <li>
+            <div class="option waiting">
+              <p>Patient waiting</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </td>
+  </tr>
+</table>
+```
 ### Table buttons top bottom
 
 #### Exampls
