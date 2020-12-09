@@ -34,7 +34,6 @@
 <button type="button" class="btn admin-btn-link">link</button>
 <button type="button" class="btn disabled" disabled >disabled</button>
 <button type="button" class="btn disabled-o" disabled >disabled outline</button>
-
 ```
 
 ### Sizes
